@@ -21,9 +21,7 @@ body {
   margin-bottom: 60px;
 }
 
-/* ================================
-   Bridge & Anchor - Navigation
-   ================================ */
+/*Navigation*/
 
 .main-navbar {
     background: #102a43;
@@ -80,9 +78,7 @@ body {
     }
 
 
-/* ================================
-   Account Dropdown
-   ================================ */
+/*Account Dropdown*/
 
 .main-navbar .dropdown-menu {
     border: none;
@@ -103,9 +99,7 @@ body {
     }
 
 
-/* ================================
-   Footer
-   ================================ */
+/*Footer */
 
 .main-footer {
     background: #102a43;
@@ -149,6 +143,10 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
 }
+
+
+
+/*Mobile Navigation*/
 
 
 @media (max-width: 991px) {
