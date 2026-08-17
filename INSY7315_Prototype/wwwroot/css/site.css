@@ -1,0 +1,168 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ================================
+   Bridge & Anchor - Navigation
+   ================================ */
+
+.main-navbar {
+    background: #102a43;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.brand-main {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    margin-top: 4px;
+    opacity: 0.75;
+}
+
+.main-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 14px !important;
+    transition: 0.2s ease;
+}
+
+    .main-navbar .nav-link:hover {
+        color: #ffffff !important;
+    }
+
+    .main-navbar .nav-link.active {
+        color: #ffffff !important;
+        font-weight: 600;
+    }
+
+.account-link {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+    .account-link:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+
+/* ================================
+   Account Dropdown
+   ================================ */
+
+.main-navbar .dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.main-navbar .dropdown-item {
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+    .main-navbar .dropdown-item:hover {
+        background: #f1f5f9;
+    }
+
+
+/* ================================
+   Footer
+   ================================ */
+
+.main-footer {
+    background: #102a43;
+    color: white;
+    padding: 35px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.65);
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+}
+
+.main-footer a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+    .main-footer a:hover {
+        color: white;
+    }
+
+.footer-divider {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin: 25px 0 15px;
+}
+
+.footer-bottom {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 991px) {
+
+    .main-navbar .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .main-navbar .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .account-link {
+        display: inline-block;
+        margin-top: 8px;
+    }
+}
