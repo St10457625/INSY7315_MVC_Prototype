@@ -1752,3 +1752,584 @@ main {
         min-width: 850px;
     }
 }
+
+/* =================================
+   MANAGER DASHBOARD
+   ================================= */
+
+.manager-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 45px 25px 75px;
+}
+
+
+/* =================================
+   HEADER
+   ================================= */
+
+.manager-header {
+    margin-bottom: 35px;
+}
+
+.manager-label {
+    color: #168a6a;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.manager-header h1 {
+    color: #102a43;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 7px 0;
+    letter-spacing: -0.5px;
+}
+
+.manager-header p {
+    color: #627d98;
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+
+/* =================================
+   STATISTICS
+   ================================= */
+
+.manager-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.manager-stat-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e1e8ef;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 5px 20px rgba(16, 42, 67, 0.05);
+    transition: all 0.2s ease;
+}
+
+    .manager-stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(16, 42, 67, 0.08);
+    }
+
+
+    /* Top accent */
+
+    .manager-stat-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #168a6a;
+    }
+
+
+/* Statistic top */
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+/* Icon */
+
+.stat-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #e6f6f0;
+    color: #168a6a;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* Change */
+
+.stat-change {
+    color: #168a6a;
+    background: #f0faf6;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 0.62rem;
+    font-weight: 600;
+}
+
+
+/* Numbers */
+
+.manager-stat-card span {
+    display: block;
+    color: #627d98;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+.manager-stat-card strong {
+    display: block;
+    color: #102a43;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+/* Pending */
+
+.manager-stat-card.pending {
+    background: #fffdf8;
+    border-color: #f3dfb0;
+}
+
+    .manager-stat-card.pending::before {
+        background: #d69e2e;
+    }
+
+    .manager-stat-card.pending .stat-icon {
+        background: #fff4d6;
+        color: #b7791f;
+    }
+
+    .manager-stat-card.pending .stat-change {
+        color: #b7791f;
+        background: #fff7e6;
+    }
+
+
+/* =================================
+   MAIN DASHBOARD
+   ================================= */
+
+.manager-dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   APPLICATION PANEL
+   ================================= */
+
+.manager-panel {
+    background: #ffffff;
+    border: 1px solid #e1e8ef;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(16, 42, 67, 0.05);
+    overflow: hidden;
+}
+
+.manager-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 24px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.manager-panel-title h2 {
+    color: #102a43;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.manager-panel-title p {
+    color: #829ab1;
+    font-size: 0.72rem;
+    margin: 0;
+}
+
+.view-all-link {
+    color: #168a6a;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .view-all-link:hover {
+        color: #0f6b53;
+    }
+
+
+/* =================================
+   APPLICATION ROWS
+   ================================= */
+
+.application-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.application-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 24px;
+    border-bottom: 1px solid #edf2f7;
+    transition: 0.15s ease;
+}
+
+    .application-row:last-child {
+        border-bottom: none;
+    }
+
+    .application-row:hover {
+        background: #f8fafc;
+    }
+
+
+/* Applicant icon */
+
+.applicant-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f1f7;
+    color: #102a43;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+/* Applicant information */
+
+.applicant-details {
+    flex: 1;
+}
+
+    .applicant-details strong {
+        display: block;
+        color: #102a43;
+        font-size: 0.78rem;
+        margin-bottom: 3px;
+    }
+
+    .applicant-details span {
+        color: #9fb3c8;
+        font-size: 0.65rem;
+    }
+
+
+/* Amount */
+
+.application-amount {
+    color: #102a43;
+    font-size: 0.8rem;
+    font-weight: 700;
+    min-width: 80px;
+}
+
+
+/* =================================
+   APPLICATION STATUS
+   ================================= */
+
+.application-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.62rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+    .application-status::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    .application-status.pending {
+        background: #fff7e6;
+        color: #b7791f;
+    }
+
+        .application-status.pending::before {
+            background: #d69e2e;
+        }
+
+    .application-status.approved {
+        background: #e6f6f0;
+        color: #168a6a;
+    }
+
+        .application-status.approved::before {
+            background: #168a6a;
+        }
+
+    .application-status.declined {
+        background: #fdecec;
+        color: #c53030;
+    }
+
+        .application-status.declined::before {
+            background: #c53030;
+        }
+
+
+/* =================================
+   ACTION BUTTONS
+   ================================= */
+
+.application-actions {
+    display: flex;
+    gap: 6px;
+}
+
+    .application-actions a {
+        padding: 6px 9px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.62rem;
+        font-weight: 600;
+        transition: 0.15s ease;
+    }
+
+.action-view {
+    color: #486581;
+    background: #f1f5f9;
+}
+
+    .action-view:hover {
+        background: #e2e8f0;
+    }
+
+.action-approve {
+    color: #168a6a;
+    background: #e6f6f0;
+}
+
+    .action-approve:hover {
+        background: #d3f0e3;
+    }
+
+.action-decline {
+    color: #c53030;
+    background: #fdecec;
+}
+
+    .action-decline:hover {
+        background: #f9d8d8;
+    }
+
+
+/* =================================
+   NEEDS ATTENTION
+   ================================= */
+
+.attention-panel {
+    background: #102a43;
+    border-radius: 12px;
+    padding: 27px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(16, 42, 67, 0.12);
+}
+
+.attention-label {
+    color: #66b89f;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.attention-panel h2 {
+    color: white;
+    font-size: 1.15rem;
+    margin: 8px 0;
+}
+
+.attention-panel > p {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.72rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* Pending number */
+
+.pending-number {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+    .pending-number strong {
+        color: white;
+        font-size: 2.7rem;
+    }
+
+    .pending-number span {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.7rem;
+    }
+
+
+/* Review button */
+
+.review-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+    background: #168a6a;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+    .review-button:hover {
+        background: #1ca77f;
+        color: white;
+    }
+
+
+/* =================================
+   QUICK ACTIONS
+   ================================= */
+
+.manager-section {
+    margin-bottom: 35px;
+}
+
+.manager-section-heading {
+    margin-bottom: 15px;
+}
+
+    .manager-section-heading h2 {
+        color: #102a43;
+        font-size: 1rem;
+        margin: 0 0 5px;
+    }
+
+    .manager-section-heading p {
+        color: #829ab1;
+        font-size: 0.72rem;
+        margin: 0;
+    }
+
+.manager-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+/* Action cards */
+
+.manager-action-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e1e8ef;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(16, 42, 67, 0.04);
+    transition: all 0.2s ease;
+}
+
+    .manager-action-card:hover {
+        transform: translateY(-3px);
+        border-color: #168a6a;
+        box-shadow: 0 8px 22px rgba(16, 42, 67, 0.08);
+    }
+
+.manager-action-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background: #e6f6f0;
+    color: #168a6a;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.manager-action-card strong {
+    display: block;
+    color: #102a43;
+    font-size: 0.82rem;
+    margin-bottom: 5px;
+}
+
+.manager-action-card span {
+    color: #829ab1;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/* =================================
+   RESPONSIVE
+   ================================= */
+
+@media (max-width: 1000px) {
+
+    .manager-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .manager-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .manager-page {
+        padding: 35px 15px 60px;
+    }
+
+    .manager-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .manager-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .application-row {
+        flex-wrap: wrap;
+    }
+
+    .application-actions {
+        width: 100%;
+        margin-left: 55px;
+    }
+
+    .application-amount {
+        margin-left: auto;
+    }
+}
