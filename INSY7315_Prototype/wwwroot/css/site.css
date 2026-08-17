@@ -1752,3 +1752,330 @@ main {
         min-width: 850px;
     }
 }
+
+/* =========================================================
+   STAFF DASHBOARD
+   All Staff styles are isolated under .staff-dashboard
+   ========================================================= */
+
+.staff-dashboard {
+    background: #f5f7fa;
+    min-height: calc(100vh - 90px);
+    padding: 45px 0 70px;
+}
+
+
+    /* =========================
+   STAFF HEADER
+   ========================= */
+
+    .staff-dashboard .staff-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 35px;
+    }
+
+    .staff-dashboard .staff-label {
+        color: #0877c9;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .staff-dashboard .staff-header h1 {
+        color: #062b50;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 8px 0;
+    }
+
+    .staff-dashboard .staff-header p {
+        color: #627d98;
+        margin: 0;
+    }
+
+    .staff-dashboard .staff-date {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+        .staff-dashboard .staff-date span {
+            color: #829ab1;
+            font-size: 0.8rem;
+        }
+
+        .staff-dashboard .staff-date strong {
+            color: #243b53;
+            font-size: 0.9rem;
+        }
+
+
+    /* =========================
+   STAT CARDS
+   ========================= */
+
+    .staff-dashboard .staff-stat-card {
+        background: #ffffff;
+        border: 1px solid #e5edf4;
+        border-radius: 10px;
+        padding: 22px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        height: 100%;
+    }
+
+    .staff-dashboard .stat-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 8px;
+        background: #eaf5fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+        .staff-dashboard .stat-icon.pending {
+            background: #fff7e6;
+        }
+
+        .staff-dashboard .stat-icon.approved {
+            background: #eaf8f0;
+        }
+
+        .staff-dashboard .stat-icon.clients {
+            background: #f1edff;
+        }
+
+    .staff-dashboard .staff-stat-card span {
+        display: block;
+        color: #829ab1;
+        font-size: 0.78rem;
+        margin-bottom: 4px;
+    }
+
+    .staff-dashboard .staff-stat-card strong {
+        display: block;
+        color: #062b50;
+        font-size: 1.6rem;
+    }
+
+
+    /* =========================
+   STAFF PANELS
+   ========================= */
+
+    .staff-dashboard .staff-panel {
+        background: #ffffff;
+        border: 1px solid #e5edf4;
+        border-radius: 10px;
+        padding: 25px;
+        height: 100%;
+    }
+
+    .staff-dashboard .panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .staff-dashboard .panel-label {
+        color: #0877c9;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .staff-dashboard .panel-header h2 {
+        color: #062b50;
+        font-size: 1.3rem;
+        margin: 5px 0 0;
+    }
+
+    .staff-dashboard .panel-link {
+        color: #0877c9;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .staff-dashboard .panel-link:hover {
+            color: #062b50;
+        }
+
+
+    /* =========================
+   STAFF TABLE
+   ========================= */
+
+    .staff-dashboard .staff-table {
+        margin: 0;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+        .staff-dashboard .staff-table thead th {
+            color: #829ab1;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e5edf4;
+            padding: 12px;
+        }
+
+        .staff-dashboard .staff-table tbody td {
+            color: #627d98;
+            font-size: 0.85rem;
+            padding: 17px 12px;
+            border-bottom: 1px solid #f0f3f6;
+        }
+
+        .staff-dashboard .staff-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .staff-dashboard .staff-table strong {
+            color: #243b53;
+        }
+
+
+    /* =========================
+   STAFF STATUS BADGES
+   ========================= */
+
+    .staff-dashboard .staff-status {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .staff-dashboard .staff-status-pending {
+        background: #fff7e6;
+        color: #b7791f;
+    }
+
+    .staff-dashboard .staff-status-approved {
+        background: #eaf8f0;
+        color: #2f855a;
+    }
+
+    .staff-dashboard .staff-status-review {
+        background: #eaf5fc;
+        color: #0877c9;
+    }
+
+
+    /* =========================
+   VIEW LINK
+   ========================= */
+
+    .staff-dashboard .staff-view-link {
+        color: #0877c9;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .staff-dashboard .staff-view-link:hover {
+            color: #062b50;
+        }
+
+
+    /* =========================
+   QUICK ACTIONS
+   ========================= */
+
+    .staff-dashboard .staff-quick-actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .staff-dashboard .staff-quick-action {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 18px 5px;
+        border-bottom: 1px solid #edf2f7;
+        text-decoration: none;
+    }
+
+        .staff-dashboard .staff-quick-action:last-child {
+            border-bottom: none;
+        }
+
+    .staff-dashboard .staff-quick-action-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        border-radius: 8px;
+        background: #eaf5fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .staff-dashboard .staff-quick-action-content {
+        flex: 1;
+    }
+
+    .staff-dashboard .staff-quick-action strong {
+        display: block;
+        color: #243b53;
+        font-size: 0.85rem;
+    }
+
+    .staff-dashboard .staff-quick-action span {
+        display: block;
+        color: #829ab1;
+        font-size: 0.75rem;
+        margin-top: 3px;
+    }
+
+    .staff-dashboard .staff-quick-action-arrow {
+        color: #0877c9;
+        font-weight: 700;
+    }
+
+    .staff-dashboard .staff-quick-action:hover strong {
+        color: #0877c9;
+    }
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+
+    .staff-dashboard {
+        padding: 30px 0 50px;
+    }
+
+        .staff-dashboard .staff-header {
+            display: block;
+        }
+
+        .staff-dashboard .staff-date {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .staff-dashboard .staff-header h1 {
+            font-size: 1.7rem;
+        }
+
+        .staff-dashboard .staff-panel {
+            padding: 18px;
+        }
+
+        .staff-dashboard .staff-table {
+            min-width: 650px;
+        }
+}
