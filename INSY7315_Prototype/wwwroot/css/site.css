@@ -585,9 +585,7 @@ main {
 }
 
 
-/* =========================================
-   LOAN RANGE
-   ========================================= */
+/*LOAN RANGE*/
 
 .loan-range-section {
     background: var(--light-grey);
@@ -628,9 +626,7 @@ main {
     }
 
 
-/* =========================================
-   DOCUMENTS
-   ========================================= */
+/*DOCUMENTS*/
 
 .documents-section {
     padding: 85px 0;
@@ -742,9 +738,7 @@ main {
 }
 
 
-/* =========================================
-   CONTACT CTA
-   ========================================= */
+/*CONTACT CTA */
 
 .contact-section {
     padding: 30px 0 85px;
@@ -789,9 +783,7 @@ main {
     }
 
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
+/*RESPONSIVE*/
 
 @media (max-width: 991px) {
 
@@ -857,9 +849,7 @@ main {
 }
 
 
-/* =========================
-   Mobile Login
-   ========================= */
+/*Mobile Login*/
 
 @media (max-width: 576px) {
 
@@ -1061,4 +1051,242 @@ main {
     }
 }
 
+/* =========================================
+   INNER PAGE HERO
+   ========================================= */
+
+.inner-hero {
+    background: linear-gradient(135deg, #062b50, #0b5d91);
+    padding: 75px 0;
+    color: white;
+}
+
+.inner-hero span {
+    color: #7ec8f5;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.inner-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.inner-hero p {
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 600px;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================
+   SERVICES PAGE
+   ========================================= */
+
+.services-page {
+    padding: 85px 0;
+}
+
+.large-service-card {
+    height: 100%;
+    padding: 40px;
+    border: 1px solid #e5edf4;
+    border-radius: 12px;
+    background: white;
+    transition: 0.25s ease;
+}
+
+.large-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(6, 43, 80, 0.08);
+}
+
+.service-icon-large {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.large-service-card h3 {
+    color: var(--navy);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.large-service-card > p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-detail {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5edf4;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.service-detail strong {
+    color: var(--navy);
+}
+
+.service-detail span {
+    color: var(--muted);
+    text-align: right;
+}
+
+.service-cta {
+    padding: 0 0 85px;
+}
+
+.service-cta-box {
+    background: var(--navy);
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.service-cta-box h2 {
+    font-size: 2rem;
+}
+
+.service-cta-box p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   POLICY PAGE
+   ========================================= */
+
+.policy-section {
+    padding: 80px 0;
+}
+
+.policy-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.policy-block {
+    padding: 30px 0;
+    border-bottom: 1px solid #e5edf4;
+}
+
+.policy-block span {
+    color: var(--blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.policy-block h2 {
+    color: var(--navy);
+    font-size: 1.4rem;
+    margin: 8px 0 12px;
+}
+
+.policy-block p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-page {
+    padding: 85px 0;
+}
+
+.contact-page h2 {
+    color: var(--navy);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.contact-page h2 span {
+    color: var(--blue);
+    display: block;
+}
+
+.contact-page > .container > .row > .col-lg-5 > p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.contact-details {
+    margin-top: 35px;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-detail-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-detail strong {
+    color: var(--navy);
+}
+
+.contact-detail p {
+    color: var(--muted);
+    margin: 5px 0 0;
+    line-height: 1.5;
+}
+
+.contact-form-card {
+    background: var(--light-grey);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.contact-form-card h2 {
+    font-size: 1.7rem;
+    margin: 0 0 8px;
+}
+
+.contact-form-card h2 span {
+    display: inline;
+}
+
+.contact-form-card > p {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.contact-form-card .form-label {
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.contact-form-card .form-control {
+    border: 1px solid #d9e2ec;
+    border-radius: 6px;
+    padding: 11px 13px;
+}
+
+.contact-form-card .form-control:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(8, 119, 201, 0.1);
+}
 
