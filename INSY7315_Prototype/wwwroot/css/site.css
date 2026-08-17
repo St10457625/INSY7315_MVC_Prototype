@@ -1168,125 +1168,305 @@ main {
     padding: 80px 0;
 }
 
-.policy-content {
-    max-width: 900px;
-    margin: auto;
+/* =================================
+   APPLICATION PAGE
+   ================================= */
+
+.application-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 25px 80px;
 }
 
-.policy-block {
-    padding: 30px 0;
-    border-bottom: 1px solid #e5edf4;
+
+/* Header */
+
+.application-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.policy-block span {
-    color: var(--blue);
-    font-size: 0.8rem;
+.application-label {
+    color: #168a6a;
+    font-size: 0.72rem;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.policy-block h2 {
-    color: var(--navy);
-    font-size: 1.4rem;
-    margin: 8px 0 12px;
-}
-
-.policy-block p {
-    color: var(--muted);
-    line-height: 1.8;
-    margin: 0;
-}
-
-
-/* =========================================
-   CONTACT PAGE
-   ========================================= */
-
-.contact-page {
-    padding: 85px 0;
-}
-
-.contact-page h2 {
-    color: var(--navy);
-    font-size: 2.5rem;
+.application-header h1 {
+    color: #102a43;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin: 10px 0 15px;
+    margin: 10px 0;
 }
 
-.contact-page h2 span {
-    color: var(--blue);
-    display: block;
-}
-
-.contact-page > .container > .row > .col-lg-5 > p {
-    color: var(--muted);
+.application-header p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #627d98;
+    font-size: 0.9rem;
     line-height: 1.7;
 }
 
-.contact-details {
-    margin-top: 35px;
-}
 
-.contact-detail {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 25px;
-}
+/* Information */
 
-.contact-detail-icon {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-    background: var(--light-blue);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-detail strong {
-    color: var(--navy);
-}
-
-.contact-detail p {
-    color: var(--muted);
-    margin: 5px 0 0;
-    line-height: 1.5;
-}
-
-.contact-form-card {
-    background: var(--light-grey);
-    border-radius: 12px;
-    padding: 40px;
-}
-
-.contact-form-card h2 {
-    font-size: 1.7rem;
-    margin: 0 0 8px;
-}
-
-.contact-form-card h2 span {
-    display: inline;
-}
-
-.contact-form-card > p {
-    color: var(--muted);
+.application-info {
+    background: white;
+    border: 1px solid #e1e8ef;
+    border-radius: 10px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
-.contact-form-card .form-label {
-    color: var(--navy);
-    font-weight: 600;
-    font-size: 0.9rem;
+.info-content {
+    display: flex;
+    gap: 20px;
 }
 
-.contact-form-card .form-control {
+.info-icon {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e6f6f0;
+    color: #168a6a;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.info-content h2 {
+    color: #102a43;
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+}
+
+.info-content p {
+    color: #627d98;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+    .info-content p:last-child {
+        margin-bottom: 0;
+    }
+
+
+/* Checklist */
+
+.info-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #e8edf2;
+}
+
+.info-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .info-item span {
+        color: #168a6a;
+        font-weight: 700;
+    }
+
+    .info-item p {
+        margin: 0;
+        color: #486581;
+        font-size: 0.8rem;
+    }
+
+
+/* Download Card */
+
+.download-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 30px;
+    background: white;
     border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(16, 42, 67, 0.05);
+    margin-bottom: 30px;
+}
+
+.download-icon {
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6f6f0;
+    color: #168a6a;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-content {
+    flex: 1;
+}
+
+    .download-content > span {
+        color: #168a6a;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .download-content h2 {
+        color: #102a43;
+        font-size: 1.15rem;
+        margin: 7px 0;
+    }
+
+    .download-content p {
+        color: #627d98;
+        font-size: 0.8rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+.download-button {
+    background: #168a6a;
+    color: white;
+    padding: 13px 22px;
     border-radius: 6px;
-    padding: 11px 13px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
-.contact-form-card .form-control:focus {
-    border-color: var(--blue);
-    box-shadow: 0 0 0 3px rgba(8, 119, 201, 0.1);
+    .download-button:hover {
+        background: #0f6b53;
+        color: white;
+    }
+
+
+/* Contact / Help */
+
+.application-help {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 30px;
+    background: #102a43;
+    border-radius: 10px;
+    color: white;
 }
 
+.help-icon {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    color: #66b89f;
+    font-weight: 700;
+}
+
+.help-content h2 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.help-content > p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+    .contact-options div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .contact-options strong {
+        color: white;
+        font-size: 0.72rem;
+    }
+
+    .contact-options span,
+    .contact-options a {
+        color: #66b89f;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+        .contact-options a:hover {
+            color: white;
+        }
+
+
+/* Notice */
+
+.application-notice {
+    margin-top: 20px;
+    padding: 18px 20px;
+    background: #f8fafc;
+    border-left: 3px solid #168a6a;
+}
+
+    .application-notice strong {
+        color: #102a43;
+        font-size: 0.78rem;
+    }
+
+    .application-notice p {
+        color: #627d98;
+        font-size: 0.75rem;
+        line-height: 1.5;
+        margin: 5px 0 0;
+    }
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .application-page {
+        padding: 40px 15px 60px;
+    }
+
+    .info-list {
+        grid-template-columns: 1fr;
+    }
+
+    .download-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .download-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .application-help {
+        flex-direction: column;
+    }
+
+    .contact-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
