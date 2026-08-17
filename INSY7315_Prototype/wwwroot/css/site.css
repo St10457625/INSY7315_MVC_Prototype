@@ -2661,3 +2661,258 @@ main {
         margin-left: auto;
     }
 }
+
+/* =========================================================
+   HOME - NCR SECTION
+   ========================================================= */
+
+.ncr-section {
+    padding: 90px 0;
+    background: #f5f8fb;
+}
+
+.ncr-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.home-section-label {
+    display: block;
+    color: #0877c9;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.ncr-content h2 {
+    color: #062b50;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ncr-content p {
+    color: #627d98;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.ncr-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #0877c9;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+    .ncr-button:hover {
+        background: #062b50;
+        color: white;
+    }
+
+
+/* NCR CARD */
+
+.ncr-card {
+    background: white;
+    border: 1px solid #e2eaf1;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(6, 43, 80, 0.06);
+}
+
+.ncr-icon {
+    width: 52px;
+    height: 52px;
+    background: #eaf8f0;
+    color: #2f855a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ncr-card h3 {
+    color: #062b50;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.ncr-card > p {
+    color: #627d98;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.ncr-points {
+    margin-top: 25px;
+}
+
+    .ncr-points div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .ncr-points span {
+        color: #2f855a;
+        font-weight: 700;
+    }
+
+    .ncr-points p {
+        margin: 0;
+        color: #243b53;
+        font-size: 0.85rem;
+    }
+
+
+/* =========================================================
+   HOME - MEET THE STAFF
+   ========================================================= */
+
+.staff-introduction {
+    padding: 90px 20px;
+    background: white;
+}
+
+.staff-introduction-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+    .staff-introduction-header h2 {
+        color: #062b50;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .staff-introduction-header p {
+        color: #627d98;
+        line-height: 1.7;
+    }
+
+
+/* STAFF GRID */
+
+.staff-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.staff-person-card {
+    width: calc(33.333% - 20px);
+}
+
+
+/* STAFF CARD */
+
+.staff-person-card {
+    background: white;
+    border: 1px solid #e2eaf1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .staff-person-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(6, 43, 80, 0.08);
+    }
+
+
+/* STAFF IMAGE */
+
+.staff-person-image {
+    height: 270px;
+    background: #eaf1f6;
+    overflow: hidden;
+}
+
+    .staff-person-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+/* STAFF INFORMATION */
+
+.staff-person-info {
+    padding: 25px;
+}
+
+    .staff-person-info h3 {
+        color: #062b50;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .staff-person-info > span {
+        color: #0877c9;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .staff-person-info p {
+        color: #627d98;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin: 15px 0;
+    }
+
+    .staff-person-info a {
+        color: #0877c9;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+
+/* =========================================================
+   HOME SECTIONS - MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ncr-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .ncr-content h2,
+    .staff-introduction-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .staff-person-image {
+        height: 300px;
+    }
+}
